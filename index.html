@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kulasu Muthu | Java Full Stack Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== LOADER ========== -->
+  <div id="loader">
+    <div class="loader-inner">
+      <span class="loader-text">KM</span>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Kulasu<span></span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home"   class="nav-link active">Home</a></li>
+        <li><a href="#about"  class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+  
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="home" class="hero">
+    <div class="hero-bg-grid"></div>
+
+    <div class="hero-content">
+      <!-- Left -->
+      <div class="hero-left reveal">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Kulasu Muthu</h1>
+        <h2 class="hero-role">
+          I'm a <span id="typed-text"></span><span class="cursor">|</span>
+        </h2>
+        <p class="hero-bio">
+          Passionate Java Full Stack Developer crafting robust, scalable web applications
+          with clean code and pixel-perfect UIs. I turn ideas into digital reality.
+        </p>
+
+        <div class="hero-buttons">
+         <a href="resume.pdf" class="btn btn-primary" download>
+    <i class="fas fa-download"></i> Download Resume
+</a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-envelope"></i> Contact Me
+          </a>
+        </div>
+
+        <div class="social-icons">
+          <a href="https://github.com/kulasu08muthu" target="_blank" class="social-icon">
+    <i class="fab fa-github"></i>
+</a>
+ <a href="https://www.linkedin.com/in/kulasu-muthu-a-b391732bb?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="social-icon">
+    <i class="fab fa-linkedin-in"></i>
+</a>
+          
+        </div>
+      </div>
+
+      <!-- Right – Avatar -->
+      <div class="avatar-container">
+    <img src="images/profile.jpg" alt="Kulasu Muthu" class="profile-img">
+</div>
+    <!-- Scroll indicator -->
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <div class="scroll-dot"></div>
+    </a>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">Get To Know</p>
+        <h2 class="section-title">About <span>Me</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card glass reveal">
+          <div class="about-card-icon"><i class="fas fa-user"></i></div>
+          <h3>Who I Am</h3>
+          <p>
+            I'm Kulasu Muthu, a passionate Java Full Stack Developer with a strong foundation
+            in both frontend and backend technologies. I love solving complex problems
+            and delivering clean, efficient code that makes a difference.
+          </p>
+        </div>
+        <div class="about-card glass reveal" style="--delay:.15s">
+          <div class="about-card-icon"><i class="fas fa-bullseye"></i></div>
+          <h3>Career Objective</h3>
+          <p>
+            To secure a challenging position in a dynamic organization where I can apply my
+            Java and web development skills, continuously grow, and contribute meaningfully
+            to innovative software solutions.
+          </p>
+        </div>
+        <div class="about-card glass reveal" style="--delay:.3s">
+          <div class="about-card-icon"><i class="fas fa-briefcase"></i></div>
+          <h3>Professional Summary</h3>
+          <p>
+            Proficient in Java, HTML, CSS, JavaScript, and SQL with hands-on project experience.
+            Committed to writing maintainable code, collaborating with teams, and delivering
+            user-centric digital experiences.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">What I Know</p>
+        <h2 class="section-title">My <span>Skills</span></h2>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Skill cards -->
+        <div class="skill-card glass reveal">
+          <div class="skill-header">
+            <span class="skill-icon"><i class="fab fa-html5"></i></span>
+            <span class="skill-name">HTML</span>
+            <span class="skill-pct">95%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+        </div>
+
+        <div class="skill-card glass reveal" style="--delay:.1s">
+          <div class="skill-header">
+            <span class="skill-icon"><i class="fab fa-css3-alt"></i></span>
+            <span class="skill-name">CSS</span>
+            <span class="skill-pct">90%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+
+        <div class="skill-card glass reveal" style="--delay:.2s">
+          <div class="skill-header">
+            <span class="skill-icon"><i class="fab fa-js"></i></span>
+            <span class="skill-name">JavaScript</span>
+            <span class="skill-pct">85%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+
+        <div class="skill-card glass reveal" style="--delay:.3s">
+          <div class="skill-header">
+            <span class="skill-icon"><i class="fab fa-java"></i></span>
+            <span class="skill-name">Java</span>
+            <span class="skill-pct">80%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+
+        <div class="skill-card glass reveal" style="--delay:.4s">
+          <div class="skill-header">
+            <span class="skill-icon"><i class="fas fa-database"></i></span>
+            <span class="skill-name">SQL</span>
+            <span class="skill-pct">75%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">My Journey</p>
+        <h2 class="section-title">Education <span>Timeline</span></h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item left reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <span class="timeline-date"><i class="far fa-calendar-alt"></i> 2023 – 2027</span>
+            <h3>B.E. Computer Science & Engineering</h3>
+
+<p>
+<i class="fas fa-university"></i>
+Akshaya College of Engineering and Technology, Coimbatore
+</p>
+
+<p>
+   Currently pursuing B.E. Computer Science & Engineering with a strong foundation in Java, Data Structures, Algorithms, SQL, Web Development, and Full Stack Development. Passionate about building responsive, user-friendly web applications and continuously enhancing problem-solving skills through real-world projects and internships.
+</p>
+          </div>
+        </div>
+
+        <div class="timeline-item right reveal" style="--delay:.2s">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <span class="timeline-date"><i class="far fa-calendar-alt"></i> 2022 – 2023</span>
+            <h3>Higher Secondary Education (HSC)</h3>
+
+<p>
+<i class="fas fa-school"></i>
+Government Higher Secondary School
+</p>
+
+<p>
+Completed Higher Secondary Education with Bio-Maths, building a strong foundation in Mathematics, Biology, and Science that supported my transition into Engineering.
+</p>
+          </div>
+        </div>
+
+        <div class="timeline-item left reveal" style="--delay:.4s">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <span class="timeline-date"><i class="far fa-calendar-alt"></i> 2020 – 2021</span>
+            <h3>Secondary School Education (SSLC)</h3>
+
+<p>
+<i class="fas fa-school"></i>
+Government High School
+</p>
+
+<p>
+2020 – 2021 | Successfully completed Secondary School Education, developing a strong academic foundation and problem-solving skills.
+</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects" class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">What I've Built</p>
+        <h2 class="section-title">My <span>Projects</span></h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card glass reveal">
+          <div class="project-img">
+            <i class="fas fa-calendar-check project-icon"></i>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>Java</span><span>HTML</span><span>CSS</span><span>SQL</span>
+            </div>
+            <h3>Event Management Website</h3>
+            <p>A full-featured event management platform enabling users to create, register,
+               and manage events with role-based access control and real-time dashboards.</p>
+            <div class="project-links">
+              <a href="https://github.com/kulasu08muthu/Event-management"
+   target="_blank"
+   class="btn github-btn">
+   GitHub
+</a>
+             <a href="https://www.linkedin.com/posts/kulasu-muthu-a-b391732bb_apexplanet-webdevelopment-html-ugcPost-7475181736306401280-Ifgn"
+   class="btn live-btn">
+   Live Demo
+</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass reveal" style="--delay:.15s">
+          <div class="project-img">
+            <i class="fas fa-question-circle project-icon"></i>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>JavaScript</span><span>HTML</span><span>CSS</span>
+            </div>
+            <h3>QuizMaster Pro</h3>
+            <p>An interactive quiz application featuring timed questions, multiple categories,
+               score tracking, leaderboards, and a sleek responsive UI for all devices.</p>
+            <div class="project-links">
+                        <a href="https://github.com/kulasu08muthu/Quiz-platform"
+   target="_blank"
+   class="btn github-btn">
+   GitHub
+</a>
+<a href="https://www.linkedin.com/posts/kulasu-muthu-a-b391732bb_apexplanet-webdevelopment-html-ugcPost-7476128723839176704-ee6E?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAEy7jZ0BXXxqFy2shLDGNY-XRJt2Vxkkhx0&utm_campaign=whatsapp"
+   target="_blank"
+   class="btn live-btn">
+   Live Demo
+</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass reveal" style="--delay:.3s">
+          <div class="project-img">
+            <i class="fas fa-user-circle project-icon"></i>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          <h3>Learning Hub</h3>
+
+<p>
+  A modern e-learning platform designed to provide an interactive learning experience with responsive design, structured courses, progress tracking, and an intuitive interface for students across all devices.
+</p>
+            <div class="project-links">
+          <a href="https://github.com/kulasu08muthu/LearnHub-website"
+   target="_blank"
+   class="btn github-btn">
+   GitHub
+</a>
+<a href="https://www.linkedin.com/posts/kulasu-muthu-a-b391732bb_apexplanet-webdevelopment-frontenddevelopment-ugcPost-7474795753652105216-Dpwa/?utm_source=share&utm_medium=member_android&rcm=ACoAAEy7jZ0BXXxqFy2shLDGNY-XRJt2Vxkkhx0"
+   class="btn live-btn">
+   Live Demo
+</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CERTIFICATES ========== -->
+  <section id="certificates" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">My Credentials</p>
+        <h2 class="section-title">Certifi<span>cates</span></h2>
+      </div>
+
+      <div class="cert-grid">
+        <div class="cert-card glass reveal">
+          <div class="cert-badge"><i class="fab fa-java"></i></div>
+          <div class="cert-body">
+           <h3>Elocution Competition</h3>
+<p>Akshaya College of Engineering and Technology</p>
+          </div>
+          <div class="cert-ribbon">Certified</div>
+        </div>
+
+        <div class="cert-card glass reveal" style="--delay:.1s">
+          <div class="cert-badge"><i class="fab fa-html5"></i></div>
+          <div class="cert-body">
+            <h3>NPTEL Elite Certification-Java</h3>
+<p>NPTEL (SWAYAM)</p>
+          </div>
+          <div class="cert-ribbon">Certified</div>
+        </div>
+
+        <div class="cert-card glass reveal" style="--delay:.2s">
+          <div class="cert-badge"><i class="fas fa-database"></i></div>
+          <div class="cert-body">
+           <h3>Full Stack Development</h3>
+<p>Value Added Course – KGiSL</p>
+          </div>
+          <div class="cert-ribbon">Certified</div>
+        </div>
+
+        <div class="cert-card glass reveal" style="--delay:.3s">
+          <div class="cert-badge"><i class="fab fa-js"></i></div>
+          <div class="cert-body">
+            <h3>Paper Presentation</h3>
+<p>Nehru Institute of Technology</p>
+          </div>
+          <div class="cert-ribbon">Certified</div>
+        </div>
+
+        <div class="cert-card glass reveal" style="--delay:.4s">
+          <div class="cert-badge"><i class="fas fa-code"></i></div>
+          <div class="cert-body">
+           <h3>AI Applications in Robotics</h3>
+<p>One Day Workshop – Akshaya College of Engineering and Technology</p>
+          </div>
+          <div class="cert-ribbon">Certified</div>
+        </div>
+
+        <div class="cert-card glass reveal" style="--delay:.5s">
+          <div class="cert-badge"><i class="fas fa-shield-alt"></i></div>
+          <div class="cert-body">
+           <h3>Business Quiz Competition</h3>
+<p>Nehru Institute of Engineering and Technology</p>
+          </div>
+          <div class="cert-ribbon">Certified</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ACHIEVEMENTS ========== -->
+  <section id="achievements" class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">By The Numbers</p>
+        <h2 class="section-title">Achieve<span>ments</span></h2>
+      </div>
+
+      <div class="achievements-grid">
+        <div class="achievement-card glass reveal">
+          <div class="achievement-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3 class="counter" data-target="5">0</h3>
+          <span class="counter-plus">+</span>
+          <p>Projects Completed</p>
+        </div>
+
+        <div class="achievement-card glass reveal" style="--delay:.15s">
+          <div class="achievement-icon"><i class="fas fa-certificate"></i></div>
+          <h3 class="counter" data-target="8">0</h3>
+          <span class="counter-plus">+</span>
+          <p>Certificates Earned</p>
+        </div>
+
+        <div class="achievement-card glass reveal" style="--delay:.3s">
+          <div class="achievement-icon"><i class="fas fa-building"></i></div>
+          <h3 class="counter" data-target="3">0</h3>
+          <span class="counter-plus">+</span>
+          <p>Internship Experience</p>
+        </div>
+
+        <div class="achievement-card glass reveal" style="--delay:.45s">
+          <div class="achievement-icon"><i class="fas fa-code-branch"></i></div>
+          <h3 class="counter" data-target="500">0</h3>
+          <span class="counter-plus">+</span>
+          <p>Lines of Code</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">Let's Talk</p>
+        <h2 class="section-title">Contact <span>Me</span></h2>
+      </div>
+
+      <div class="contact-wrapper">
+        <!-- Info cards -->
+        <div class="contact-info reveal">
+          <div class="contact-info-card glass">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>kulasu08muthu@email.com</p>
+            </div>
+          </div>
+          
+          <div class="contact-info-card glass">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Location</h4>
+              <p>Coimbatore, India</p>
+            </div>
+          </div>
+          <div class="contact-social">
+           <a href="https://github.com/kulasu08muthu" target="_blank" class="social-icon">
+    <i class="fab fa-github"></i>
+</a>
+ <a href="https://www.linkedin.com/in/kulasu-muthu-a-b391732bb?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="social-icon">
+    <i class="fab fa-linkedin-in"></i>
+</a>
+            
+          </div>
+        </div>
+
+        <!-- Form -->
+        <form class="contact-form glass reveal" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <div class="input-wrapper">
+              <i class="fas fa-user"></i>
+              <input type="text" id="name" name="name" placeholder="Your name" />
+            </div>
+            <span class="form-error" id="nameError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <div class="input-wrapper">
+              <i class="fas fa-envelope"></i>
+              <input type="email" id="email" name="email" placeholder="your@email.com" />
+            </div>
+            <span class="form-error" id="emailError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <div class="input-wrapper textarea-wrapper">
+              <i class="fas fa-comment-alt"></i>
+              <textarea id="message" name="message" rows="5" placeholder="Your message…"></textarea>
+            </div>
+            <span class="form-error" id="messageError"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i> Message sent successfully! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="footer">
+    <div class="footer-content">
+      <p class="footer-name">Kulasu<span> </span>Muthu</p>
+      <p class="footer-tagline">Java Full Stack Developer</p>
+      <div class="footer-social">
+        <a href="#" aria-label="GitHub"    class="social-icon"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"  class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p class="footer-copy">&copy; <span id="year"></span> Kulasu Muthu. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back-to-top -->
+  <button id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="script.js"></script>
+</body>
+</html>
